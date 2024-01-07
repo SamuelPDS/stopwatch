@@ -4,7 +4,6 @@ let minutes = 0
 let hours = 0
 
 let timerRef = document.querySelector('.timerDisplay');
-//let int=null
 let btnStart = document.getElementById('startTimer')
 let btnPause = document.getElementById('pauseTimer')
 let btnReset = document.getElementById('resetTimer')
@@ -30,16 +29,6 @@ milliseconds = 0
     document.getElementById('milliseconds').innerHTML= "00"
 })
 
-
-/*function start(){
-  start= document.getElementById('startTimer').addEventListener('click', ()=>{
-    if(int!==null){
-        clearInterval(int)
-    } int = setInterval(displayTimer,1000)
-})
-return start
-}*/
-
 function displayTimer(){
     if (timer){
         milliseconds++;
@@ -55,8 +44,6 @@ function displayTimer(){
             hours++
         }
     }
-
-
 
 let hrString = hours
 let minString = minutes
